@@ -1,0 +1,5 @@
+c:\users\ax583e\source\repos\TestSolution\Test.Databse\bin\Debug\Test.Databse.dacpac
+c:\users\ax583e\source\repos\TestSolution\Test.Databse\bin\Debug\Test.Databse.dll
+c:\users\ax583e\source\repos\TestSolution\Test.Databse\bin\Debug\Test.Databse.pdb
+c:\users\ax583e\source\repos\TestSolution\Test.Databse\obj\Debug\Test.Databse.dll
+c:\users\ax583e\source\repos\TestSolution\Test.Databse\obj\Debug\Test.Databse.pdb

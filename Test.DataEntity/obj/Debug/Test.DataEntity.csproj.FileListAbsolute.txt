@@ -1,0 +1,11 @@
+c:\users\ax583e\source\repos\TestSolution\Test.DataEntity\bin\Debug\Test.DataEntity.dll.config
+c:\users\ax583e\source\repos\TestSolution\Test.DataEntity\bin\Debug\Test.DataEntity.dll
+c:\users\ax583e\source\repos\TestSolution\Test.DataEntity\bin\Debug\Test.DataEntity.pdb
+c:\users\ax583e\source\repos\TestSolution\Test.DataEntity\bin\Debug\EntityFramework.dll
+c:\users\ax583e\source\repos\TestSolution\Test.DataEntity\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\ax583e\source\repos\TestSolution\Test.DataEntity\bin\Debug\EntityFramework.xml
+c:\users\ax583e\source\repos\TestSolution\Test.DataEntity\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\ax583e\source\repos\TestSolution\Test.DataEntity\obj\Debug\Test.DataEntity.csprojResolveAssemblyReference.cache
+c:\users\ax583e\source\repos\TestSolution\Test.DataEntity\obj\Debug\Test.DataEntity.csproj.CoreCompileInputs.cache
+c:\users\ax583e\source\repos\TestSolution\Test.DataEntity\obj\Debug\Test.DataEntity.dll
+c:\users\ax583e\source\repos\TestSolution\Test.DataEntity\obj\Debug\Test.DataEntity.pdb

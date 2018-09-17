@@ -1,0 +1,14 @@
+c:\users\ax583e\source\repos\TestSolution\Test.DataAccess\bin\Debug\Test.DataAccess.dll
+c:\users\ax583e\source\repos\TestSolution\Test.DataAccess\bin\Debug\Test.DataAccess.pdb
+c:\users\ax583e\source\repos\TestSolution\Test.DataAccess\obj\Debug\Test.DataAccess.csprojResolveAssemblyReference.cache
+c:\users\ax583e\source\repos\TestSolution\Test.DataAccess\obj\Debug\Test.DataAccess.csproj.CoreCompileInputs.cache
+c:\users\ax583e\source\repos\TestSolution\Test.DataAccess\obj\Debug\Test.DataAccess.dll
+c:\users\ax583e\source\repos\TestSolution\Test.DataAccess\obj\Debug\Test.DataAccess.pdb
+c:\users\ax583e\source\repos\TestSolution\Test.DataAccess\bin\Debug\Test.DataAccess.dll.config
+c:\users\ax583e\source\repos\TestSolution\Test.DataAccess\bin\Debug\EntityFramework.dll
+c:\users\ax583e\source\repos\TestSolution\Test.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\ax583e\source\repos\TestSolution\Test.DataAccess\bin\Debug\Test.DataEntity.dll
+c:\users\ax583e\source\repos\TestSolution\Test.DataAccess\bin\Debug\Test.DataEntity.pdb
+c:\users\ax583e\source\repos\TestSolution\Test.DataAccess\bin\Debug\Test.DataEntity.dll.config
+c:\users\ax583e\source\repos\TestSolution\Test.DataAccess\bin\Debug\EntityFramework.xml
+c:\users\ax583e\source\repos\TestSolution\Test.DataAccess\bin\Debug\EntityFramework.SqlServer.xml

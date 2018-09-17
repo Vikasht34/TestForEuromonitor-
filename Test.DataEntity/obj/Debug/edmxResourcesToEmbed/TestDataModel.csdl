@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CustomerVarientCost">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="TypeOfCustomer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OverAllCost" Type="Double" />
+  </EntityType>
+  <EntityType Name="DistanceVarientBaseCost">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="MinDist" Type="Int32" />
+    <Property Name="MaxDist" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="OverAllCost" Type="Double" />
+  </EntityType>
+  <EntityType Name="StairsVarientBaseCost">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="MinStair" Type="Int32" />
+    <Property Name="MaxStair" Type="Int32" />
+    <Property Name="OverAllCost" Type="Double" />
+  </EntityType>
+  <EntityContainer Name="TestDbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CustomerVarientCosts" EntityType="Self.CustomerVarientCost" />
+    <EntitySet Name="DistanceVarientBaseCosts" EntityType="Self.DistanceVarientBaseCost" />
+    <EntitySet Name="StairsVarientBaseCosts" EntityType="Self.StairsVarientBaseCost" />
+    <FunctionImport Name="GetOverAllCost" ReturnType="Collection(Decimal)">
+      <Parameter Name="Distance" Mode="In" Type="Int32" />
+      <Parameter Name="Stair" Mode="In" Type="Int32" />
+      <Parameter Name="CustType" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

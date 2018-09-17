@@ -1,0 +1,14 @@
+c:\users\ax583e\source\repos\TestSolution\Test.Service\bin\Debug\Test.Service.dll
+c:\users\ax583e\source\repos\TestSolution\Test.Service\bin\Debug\Test.Service.pdb
+c:\users\ax583e\source\repos\TestSolution\Test.Service\bin\Debug\Test.DataAccess.dll
+c:\users\ax583e\source\repos\TestSolution\Test.Service\bin\Debug\Test.DataEntity.dll
+c:\users\ax583e\source\repos\TestSolution\Test.Service\bin\Debug\EntityFramework.dll
+c:\users\ax583e\source\repos\TestSolution\Test.Service\bin\Debug\Test.DataAccess.pdb
+c:\users\ax583e\source\repos\TestSolution\Test.Service\bin\Debug\Test.DataAccess.dll.config
+c:\users\ax583e\source\repos\TestSolution\Test.Service\bin\Debug\Test.DataEntity.pdb
+c:\users\ax583e\source\repos\TestSolution\Test.Service\bin\Debug\Test.DataEntity.dll.config
+c:\users\ax583e\source\repos\TestSolution\Test.Service\bin\Debug\EntityFramework.xml
+c:\users\ax583e\source\repos\TestSolution\Test.Service\obj\Debug\Test.Service.csprojResolveAssemblyReference.cache
+c:\users\ax583e\source\repos\TestSolution\Test.Service\obj\Debug\Test.Service.csproj.CoreCompileInputs.cache
+c:\users\ax583e\source\repos\TestSolution\Test.Service\obj\Debug\Test.Service.dll
+c:\users\ax583e\source\repos\TestSolution\Test.Service\obj\Debug\Test.Service.pdb

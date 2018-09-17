@@ -1,0 +1,60 @@
+﻿
+@using System.Configuration
+@{
+    @Scripts.Render("~/Scripts/angular.min.js")
+    @Scripts.Render("~/Scripts/Modules/CostEstimationController.js")
+    @Scripts.Render("~/Scripts/Controller/CostEstimationModule.js")
+   
+    ViewBag.Title = "Cost Estimation";
+
+}
+<h2>@ViewBag.Title</h2>
+<div ng-app="costEstimation" ng-controller="costEstimationController">
+    <div class="form-group">
+        <div class="row" >
+            <div class="radio col-sm-2">
+                <label>
+                    <input type="radio" name="chickenEgg" value="1" ng-model="formData.custType">
+                    New
+                </label>
+            </div>
+            <div class="radio col-sm-2">
+                <label>
+                    <input type="radio" name="chickenEgg" value="2" ng-model="formData.custType">
+                    cupon
+                </label>
+            </div>
+            <div class="radio col-sm-2">
+                <label>
+                    <input type="radio" name="chickenEgg" value="3" ng-model="formData.custType">
+                    Golden
+                </label>
+            </div>
+            <div class="radio col-sm-2">
+                <label>
+                    <input type="radio" name="chickenEgg" value="4" ng-model="formData.custType">
+                    Exsiting
+                </label>
+            </div>
+        </div>
+        <div class ="row">
+            <div class="col-md-2">
+                <label>Distance from ABC's Office:
+                    <input type="text" name="input" ng-model="formData.distance"
+                           required >
+                </label>
+            </div>
+            <div class="col-md-2">
+                <label>No of Stairs:
+                    <input type="text" name="input" ng-model="formData.stair"
+                           required >
+                </label>
+            </div>
+        </div>
+        <button ng-click ="GetCost()"></button>
+        
+        <label ng-model="formData.cost">
+            Total Cost:
+        </label>
+    </div> 
+</div>

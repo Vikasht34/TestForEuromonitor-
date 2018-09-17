@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="TestDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CustomerVarientCost">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="TypeOfCustomer" Type="nvarchar" MaxLength="50" />
+          <Property Name="OverAllCost" Type="float" />
+        </EntityType>
+        <EntityType Name="DistanceVarientBaseCost">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="MinDist" Type="int" />
+          <Property Name="MaxDist" Type="nchar" MaxLength="10" />
+          <Property Name="OverAllCost" Type="float" />
+        </EntityType>
+        <EntityType Name="StairsVarientBaseCost">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="MinStair" Type="int" />
+          <Property Name="MaxStair" Type="int" />
+          <Property Name="OverAllCost" Type="float" />
+        </EntityType>
+        <Function Name="GetOverAllCost" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Distance" Type="int" Mode="In" />
+          <Parameter Name="Stair" Type="int" Mode="In" />
+          <Parameter Name="CustType" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="TestDbModelStoreContainer">
+          <EntitySet Name="CustomerVarientCost" EntityType="Self.CustomerVarientCost" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DistanceVarientBaseCost" EntityType="Self.DistanceVarientBaseCost" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="StairsVarientBaseCost" EntityType="Self.StairsVarientBaseCost" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TestDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CustomerVarientCost">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="TypeOfCustomer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OverAllCost" Type="Double" />
+        </EntityType>
+        <EntityType Name="DistanceVarientBaseCost">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="MinDist" Type="Int32" />
+          <Property Name="MaxDist" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="OverAllCost" Type="Double" />
+        </EntityType>
+        <EntityType Name="StairsVarientBaseCost">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="MinStair" Type="Int32" />
+          <Property Name="MaxStair" Type="Int32" />
+          <Property Name="OverAllCost" Type="Double" />
+        </EntityType>
+        <EntityContainer Name="TestDbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CustomerVarientCosts" EntityType="Self.CustomerVarientCost" />
+          <EntitySet Name="DistanceVarientBaseCosts" EntityType="Self.DistanceVarientBaseCost" />
+          <EntitySet Name="StairsVarientBaseCosts" EntityType="Self.StairsVarientBaseCost" />
+          <FunctionImport Name="GetOverAllCost" ReturnType="Collection(Decimal)">
+            <Parameter Name="Distance" Mode="In" Type="Int32" />
+            <Parameter Name="Stair" Mode="In" Type="Int32" />
+            <Parameter Name="CustType" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TestDbModelStoreContainer" CdmEntityContainer="TestDbEntities">
+          <EntitySetMapping Name="CustomerVarientCosts">
+            <EntityTypeMapping TypeName="TestDbModel.CustomerVarientCost">
+              <MappingFragment StoreEntitySet="CustomerVarientCost">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TypeOfCustomer" ColumnName="TypeOfCustomer" />
+                <ScalarProperty Name="OverAllCost" ColumnName="OverAllCost" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DistanceVarientBaseCosts">
+            <EntityTypeMapping TypeName="TestDbModel.DistanceVarientBaseCost">
+              <MappingFragment StoreEntitySet="DistanceVarientBaseCost">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="MinDist" ColumnName="MinDist" />
+                <ScalarProperty Name="MaxDist" ColumnName="MaxDist" />
+                <ScalarProperty Name="OverAllCost" ColumnName="OverAllCost" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StairsVarientBaseCosts">
+            <EntityTypeMapping TypeName="TestDbModel.StairsVarientBaseCost">
+              <MappingFragment StoreEntitySet="StairsVarientBaseCost">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="MinStair" ColumnName="MinStair" />
+                <ScalarProperty Name="MaxStair" ColumnName="MaxStair" />
+                <ScalarProperty Name="OverAllCost" ColumnName="OverAllCost" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="GetOverAllCost" FunctionName="TestDbModel.Store.GetOverAllCost" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

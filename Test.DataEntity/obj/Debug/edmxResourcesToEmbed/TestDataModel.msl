@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TestDbModelStoreContainer" CdmEntityContainer="TestDbEntities">
+    <EntitySetMapping Name="CustomerVarientCosts">
+      <EntityTypeMapping TypeName="TestDbModel.CustomerVarientCost">
+        <MappingFragment StoreEntitySet="CustomerVarientCost">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TypeOfCustomer" ColumnName="TypeOfCustomer" />
+          <ScalarProperty Name="OverAllCost" ColumnName="OverAllCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DistanceVarientBaseCosts">
+      <EntityTypeMapping TypeName="TestDbModel.DistanceVarientBaseCost">
+        <MappingFragment StoreEntitySet="DistanceVarientBaseCost">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MinDist" ColumnName="MinDist" />
+          <ScalarProperty Name="MaxDist" ColumnName="MaxDist" />
+          <ScalarProperty Name="OverAllCost" ColumnName="OverAllCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StairsVarientBaseCosts">
+      <EntityTypeMapping TypeName="TestDbModel.StairsVarientBaseCost">
+        <MappingFragment StoreEntitySet="StairsVarientBaseCost">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MinStair" ColumnName="MinStair" />
+          <ScalarProperty Name="MaxStair" ColumnName="MaxStair" />
+          <ScalarProperty Name="OverAllCost" ColumnName="OverAllCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetOverAllCost" FunctionName="TestDbModel.Store.GetOverAllCost" />
+  </EntityContainerMapping>
+</Mapping>
