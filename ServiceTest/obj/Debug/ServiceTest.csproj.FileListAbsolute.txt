@@ -1,0 +1,13 @@
+C:\Users\ax583e\source\repos\TestSolution\ServiceTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\ax583e\source\repos\TestSolution\ServiceTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\ax583e\source\repos\TestSolution\ServiceTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\ax583e\source\repos\TestSolution\ServiceTest\bin\Debug\ServiceTest.dll
+C:\Users\ax583e\source\repos\TestSolution\ServiceTest\bin\Debug\ServiceTest.pdb
+C:\Users\ax583e\source\repos\TestSolution\ServiceTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\ax583e\source\repos\TestSolution\ServiceTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\ax583e\source\repos\TestSolution\ServiceTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\ax583e\source\repos\TestSolution\ServiceTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\ax583e\source\repos\TestSolution\ServiceTest\obj\Debug\ServiceTest.csprojResolveAssemblyReference.cache
+C:\Users\ax583e\source\repos\TestSolution\ServiceTest\obj\Debug\ServiceTest.csproj.CoreCompileInputs.cache
+C:\Users\ax583e\source\repos\TestSolution\ServiceTest\obj\Debug\ServiceTest.dll
+C:\Users\ax583e\source\repos\TestSolution\ServiceTest\obj\Debug\ServiceTest.pdb

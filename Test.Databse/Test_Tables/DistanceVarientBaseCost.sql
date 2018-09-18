@@ -2,6 +2,6 @@
 (
 	[Id] INT NOT NULL PRIMARY KEY, 
     [MinDist] INT NULL, 
-    [MaxDist] NCHAR(10) NULL, 
+    [MaxDist] INT NULL, 
     [OverAllCost] FLOAT NULL
 )

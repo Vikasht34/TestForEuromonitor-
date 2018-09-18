@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[CustomerVarientCost]
 (
 	[Id] INT NOT NULL PRIMARY KEY, 
-    [TypeOfCustomer] NVARCHAR(50) NULL, 
+    [TypeOfCustomer] INT NULL, 
     [OverAllCost] FLOAT NULL
 )
